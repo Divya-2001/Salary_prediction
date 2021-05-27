@@ -1,0 +1,5 @@
+import joblib
+model = joblib.load('finalsalary.pk1')
+yrsExp = float(input("Enter years of Experience : "))
+prediction = model.predict([[yrsExp]])
+print("Your Salary would be : ", prediction)
